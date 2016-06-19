@@ -76,7 +76,7 @@ class ZFTPSRV(threading.Thread):
                 if self.conn: self.conn.close()
                 if self.datasrvsock: self.datasrvsock.close()
                 if self.datasock: self.datasock.close()
-                print colored ( "[-] FAIL : Connection is closed.", red )
+                print colored ( "[-] FAIL : Connection is closed.", 'red')
                 sys.exit(1)
 
 
