@@ -5,12 +5,12 @@ Z FTP Server, Simple Python FTP Server for Pentesting Purpose
 Z FTP Server implements some FTP commands, it could be extended. It can be useful on some MITM Attacks.
 
 # Usage :
-root@zakan:~/zftpsrv # python zftpsrv.py
-
 
 zftpsrv.py [ --ip IP ] [ --port PORT ] [ --user USER ] [ --pwd PASSWORD] [--homedir HOMEDIR ] [ --wlist x.x.x.x,y.y.y.y,z.z.z.z ]
 
-# Example: zftpsrv.py --ip 192.168.1.2 --port 21 --user test --pwd pass123 --homedir /tmp/ftpsrv --wlist 192.168.1.3,192.168.1.4
+# Example: 
+
+zftpsrv.py --ip 192.168.1.2 --port 21 --user test --pwd pass123 --homedir /tmp/ftpsrv --wlist 192.168.1.3,192.168.1.4
 
 
 # Options:
@@ -27,3 +27,8 @@ zftpsrv.py [ --ip IP ] [ --port PORT ] [ --user USER ] [ --pwd PASSWORD] [--home
 # Import:
 	
 The only mode implemented is "Passive Mode", then the client should specify it.
+This script could be extended easly, by using the template. Each command is a function.
+For example, you could add "def STOR" without touching the rest of the code, the command 
+will be available.
+
+Enjoy !
